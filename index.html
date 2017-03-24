@@ -1,62 +1,34 @@
-<DOCTYPE!>
-<script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Games</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
 
-// Create a rock paper scissors game that runs until one player has three wins
+<div class="wrapper">
+<header class="main-head">Kyle's JavaScript Games</header>
+<nav class="main-nav">
+  <ul>
+    <li>Paper Rock Scissors</li>
+    <li>Battleship</li>
+    <li>RPG/Platform</li>
+  </ul>
+</nav>
 
-// Store the player names and number of wins for each player in variables
-// Use a while loop to run the game until one player has 3 wins
-// Use parseInt(Math.random()*10)%3 to generate a random number from 0 to 2 (0 == rock, 1 == paper, 2 == scissors)
+<article class="content">
+<h1>Main Article Area</h1>
+<p>In this layout, we display the areas in source order for any screen less that 500 pixels wide. We go to a two column layout, and then to a three column layout by redefining the grid, and the placement of items on the grid.</p></article>
 
-// Rules: 
-// scissors(2) > paper(1)
-// paper(1) > rock(0)
-// rock(0) > scissors(2)
+<aside class="side">About Kyle</aside>
 
-// Output each player’s hand to the console
-// Use if statements to determine a winner of the round
-// Output the round winner’s name to the console
-// Keep track of how many rounds each player has won
-// When one player wins 3 rounds, announce that player’s name as the game winner
+<div class="ad">Buy a game in the app store</div>
 
+<footer class="main-footer">Footer</footer>
+  
+</div>
 
-
-const gamePiece = [
-  'rock',
-  'paper', 
-  'scissors'
-];
-
-function hand(x) {
-  return gamePiece.indexOf(x);
-}
-
-console.log(hand('scissors'));
-
-// TODO
-// var outcomeMessage = ???
-
-function game(a, b) {
-    if (hand(a) > hand(b)) {
-      var outcome = `${a} beats ${b}`;
-    } else if (hand(a) < hand(b)) {
-      var outcome = `${b} beats ${a}`;
-    } else {
-      var outcome = `${a} is the equal to ${b}. The game is tie!`;
-    }
-  return outcome;
-}
-
-console.log(game('scissors', 'paper'));
-
-// var gamePlayer = [
-// {
-//   name: 
-// }]
-
-
-
-
-
-</script>
-
-</DOCTYPE!>
+<script src="application.js"></script>  
+</body>
+</html>
